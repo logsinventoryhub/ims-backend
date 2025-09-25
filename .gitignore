@@ -1,0 +1,22 @@
+# Composer dependencies
+/vendor/
+
+# Cache & logs
+*.log
+*.cache
+*.tmp
+
+# Environment files (do not commit sensitive data)
+.env
+.env.local
+.env.*
+
+# System/IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# PHPUnit
+/phpunit.xml
+/phpunit.xml.dist
