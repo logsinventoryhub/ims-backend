@@ -5,9 +5,12 @@ require_once "jwt/JWT.php";
 require_once "status.php";
 require_once "roles.php";
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 use Firebase\JWT\JWT;
 
-define("secret_key", "ez.F9~)UHxD?2~J");
+define("secret_key", $_ENV["SECRET_KEY"]);
 
 class LogsIMS extends HandleSql
 {
